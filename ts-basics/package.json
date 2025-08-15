@@ -1,0 +1,12 @@
+{
+  "name": "ts-basics",
+  "type": "module",
+  "packageManager": "yarn@4.9.1",
+  "scripts": {
+    "dev": "tsx functions-test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.16.0",
+    "typescript": "^5.9.2"
+  }
+}
