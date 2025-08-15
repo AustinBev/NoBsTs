@@ -1,0 +1,42 @@
+{
+  // **Completely stop auto-suggest popups**
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.wordBasedSuggestions": "off",
+  "editor.parameterHints.enabled": false,
+  "editor.inlineSuggest.enabled": false,
+
+  // Turn off TypeScript/JavaScript suggestion providers
+  "typescript.suggest.enabled": false,
+  "javascript.suggest.enabled": false,
+  "typescript.suggest.completeFunctionCalls": false,
+  "javascript.suggest.completeFunctionCalls": false,
+
+  // Keep your change, but it doesn’t affect popups
+  "typescript.tsserver.web.projectWideIntellisense.enabled": false,
+
+  // (Optional) kill hover popups too
+  // "editor.hover.enabled": false
+
+  // Per-language hard block (belt-and-suspenders)
+  "[typescript]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false
+  },
+  "[javascript]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false
+  }
+}
